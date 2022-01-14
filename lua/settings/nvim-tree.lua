@@ -33,15 +33,15 @@ require "nvim-tree".setup {
   },
   filters = {
     dotfiles = false,
-    custom = {".git"}
+    custom = {".git", "node_modules", "*.log"}
   },
   git = {
     enable = true,
-    ignore = true,
+    ignore = false,
     timeout = 500
   },
   view = {
-    width = 30,
+    width = 25,
     height = 30,
     hide_root_folder = false,
     side = "left",
